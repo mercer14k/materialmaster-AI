@@ -1,0 +1,6 @@
+packages:
+  - .
+allowBuilds:
+  esbuild: true
+verifyDepsBeforeRun: false
+storeDir: ../../.pnpm-store
