@@ -1,0 +1,33 @@
+.............................................................            [100%]
+=============================== warnings summary ===============================
+.venv/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /Users/rushikeshrane/Downloads/materialmaster-ai/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+______________ coverage: platform darwin, python 3.12.14-final-0 _______________
+
+Name                                         Stmts   Miss  Cover
+----------------------------------------------------------------
+apps/api/__init__.py                             0      0   100%
+apps/api/main.py                               274     19    93%
+src/materialmaster/__init__.py                   1      0   100%
+src/materialmaster/ai/__init__.py                0      0   100%
+src/materialmaster/ai/embeddings.py             21      4    81%
+src/materialmaster/ai/explanations.py           67     16    76%
+src/materialmaster/cli.py                       58     58     0%
+src/materialmaster/domain/__init__.py            0      0   100%
+src/materialmaster/domain/engine.py            110      0   100%
+src/materialmaster/domain/generator.py          50      7    86%
+src/materialmaster/domain/models.py             70      0   100%
+src/materialmaster/domain/validation.py         58      7    88%
+src/materialmaster/evaluation/__init__.py        0      0   100%
+src/materialmaster/evaluation/benchmark.py      55      2    96%
+src/materialmaster/services/__init__.py          0      0   100%
+src/materialmaster/services/storage.py          90      0   100%
+src/materialmaster/services/workflow.py        110      5    95%
+----------------------------------------------------------------
+TOTAL                                          964    118    88%
+Coverage JSON written to file output/coverage.json
+61 passed, 1 warning in 4.33s

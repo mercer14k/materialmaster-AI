@@ -1,0 +1,69 @@
+$ playwright test
+[WebServer] {"event": "http.request", "trace_id": "c3e46451091040af8642511647dc37ce", "method": "GET", "path": "/ready", "status": 200, "latency_ms": 1.25}
+[WebServer] (node:4427) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ vite --host 127.0.0.1 --port 5297
+[WebServer] (node:4444) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:4451) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] {"event": "http.request", "trace_id": "672a78a7511d468a96914abffb442fee", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 1.65}
+[WebServer] {"event": "http.request", "trace_id": "82fbd1f61621414f98065ad2aae23082", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 4.06}
+[WebServer] {"event": "http.request", "trace_id": "f0a331c639e34a059a1a0899984e12b7", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 0.92}
+[WebServer] {"event": "http.request", "trace_id": "211afc0221424c1faeb81b1fe2262319", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 1.64}
+[WebServer] {"event": "http.request", "trace_id": "0c88522876604b68b59a9eadaf6f9085", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 4.88}
+[WebServer] {"event": "http.request", "trace_id": "fd2afa332d33429192a2f80feb881a27", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 3.89}
+[WebServer] {"event": "http.request", "trace_id": "ba35cca5a15d41ff952c11ad7c6d4cff", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 1.72}
+[WebServer] {"event": "http.request", "trace_id": "cae4ea43b6094080977ce16c2ad1395e", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 1.87}
+[WebServer] {"event": "http.request", "trace_id": "70223846048b40e2b4c9b145e9279b09", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 3.16}
+[WebServer] {"event": "http.request", "trace_id": "b14dfaa574cc4924ad3a0a821f480cd8", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 2.13}
+[WebServer] {"event": "http.request", "trace_id": "c38ca6e0ae3849cdbea5bd8f78e93bfe", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 3.82}
+[WebServer] {"event": "http.request", "trace_id": "17340ef5c1864c8e8fb4501ce2fbf224", "method": "GET", "path": "/api/v1/findings/a9f9ddb1-2706-4cca-896e-3428f000e81d:0df0ef3f8cf27be3527cc8c8", "status": 200, "latency_ms": 2.97}
+[WebServer] {"event": "http.request", "trace_id": "30f2997cecca40f7a9bbed1aeee40385", "method": "POST", "path": "/api/v1/commands/findings/a9f9ddb1-2706-4cca-896e-3428f000e81d:0df0ef3f8cf27be3527cc8c8/explain", "status": 200, "latency_ms": 3.95}
+[WebServer] {"event": "http.request", "trace_id": "85c80c8f4ecb42088a3c1091096b60e9", "method": "POST", "path": "/api/v1/commands/findings/a9f9ddb1-2706-4cca-896e-3428f000e81d:0df0ef3f8cf27be3527cc8c8/review", "status": 200, "latency_ms": 2.53}
+[WebServer] {"event": "http.request", "trace_id": "25d6b51904364e06ac826e962bfff3ad", "method": "GET", "path": "/api/v1/findings/a9f9ddb1-2706-4cca-896e-3428f000e81d:0df0ef3f8cf27be3527cc8c8", "status": 200, "latency_ms": 1.52}
+[WebServer] {"event": "http.request", "trace_id": "b443442a47eb4ca4aa12bc84575f6f26", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 1.2}
+[WebServer] {"event": "http.request", "trace_id": "3d12bba32df74d619db119867c3fb906", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 3.31}
+[WebServer] {"event": "http.request", "trace_id": "7e39060c2d6a445aa468f64415880770", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 4.28}
+[WebServer] {"event": "http.request", "trace_id": "6a05d561ecaa416b9f43f49eeb27f9c7", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 3.27}
+[WebServer] {"event": "http.request", "trace_id": "3f0dae6b85b549feb24741f4eaa98cfe", "method": "GET", "path": "/api/v1/export/findings.csv", "status": 200, "latency_ms": 2.8}
+[WebServer] {"event": "http.request", "trace_id": "19142e2268cc4509af80617d6a92e6d1", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 1.81}
+[WebServer] {"event": "http.request", "trace_id": "b3b9756453554892b7c678bf510bcd2e", "method": "GET", "path": "/api/v1/audit", "status": 200, "latency_ms": 2.23}
+  ✓  1 ../../tests/e2e/workflow.spec.ts:6:5 › computed dashboard, evidence review, AI abstention, export, and audit (1.7s)
+[WebServer] {"event": "http.request", "trace_id": "38120cb4b320463f8fdd100f44167aaa", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 0.81}
+[WebServer] {"event": "http.request", "trace_id": "e2cdb0f4ae6946bdb555115799b3ba0b", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 1.89}
+[WebServer] {"event": "http.request", "trace_id": "534ee84362b8438fb8e9b66aeb8aabb0", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 0.58}
+[WebServer] {"event": "http.request", "trace_id": "1cf3859d12e344388fa7fd9bfcf91d7b", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 1.24}
+[WebServer] {"event": "http.request", "trace_id": "e810e4ee50674af092426b1f69fe7f03", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 3.31}
+[WebServer] {"event": "http.request", "trace_id": "ab8bd50c36c4436db3695f4fd89ab142", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 2.48}
+[WebServer] {"event": "http.request", "trace_id": "f83a31ffe05c409aa68dd102afb1d8ba", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 1.94}
+[WebServer] {"event": "http.request", "trace_id": "84e123c2c0a348d6b26c6e19687b51b1", "method": "GET", "path": "/api/v1/materials", "status": 200, "latency_ms": 2.55}
+[WebServer] {"event": "http.request", "trace_id": "b5f063eda7bd41b282f99e7b132d74c0", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 1.79}
+[WebServer] {"event": "http.request", "trace_id": "aa0e28aab71b4ff2957ad438e8995ca8", "method": "GET", "path": "/api/v1/materials", "status": 200, "latency_ms": 3.5}
+[WebServer] {"event": "http.request", "trace_id": "e8eb429c233b46058511443a0ebacfb4", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 1.83}
+[WebServer] {"event": "http.request", "trace_id": "72820ad3cb69488da9447f46ed946130", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 1.91}
+[WebServer] {"event": "http.request", "trace_id": "fd76108fab794d8fa9db78808aaace62", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 3.04}
+  ✓  2 ../../tests/e2e/workflow.spec.ts:87:5 › material search, responsive layout and architecture (833ms)
+[WebServer] {"event": "http.request", "trace_id": "3776ae2bd2e444db90c530fc73905382", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 0.71}
+[WebServer] {"event": "http.request", "trace_id": "9de8723a7b3b49558b1c346a158e0f9a", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 1.87}
+[WebServer] {"event": "http.request", "trace_id": "b46a03c9ee5842d29227b7153f13e910", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 0.64}
+[WebServer] {"event": "http.request", "trace_id": "8762e9ac828a40a6a597d985fb374262", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 1.34}
+[WebServer] {"event": "http.request", "trace_id": "9dfab6f37d1d4b5da928db04a2fbbbb7", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 2.52}
+[WebServer] {"event": "http.request", "trace_id": "4d04aac395e34a61b7407dc1e8b6e4bc", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 3.22}
+[WebServer] {"event": "http.request", "trace_id": "2cfafef6ff3d416c8532b89414f3695b", "method": "POST", "path": "/api/v1/commands/import", "status": 200, "latency_ms": 6.02}
+[WebServer] {"event": "http.request", "trace_id": "6bf50aea8e644e9680d07dc573cc3e60", "method": "GET", "path": "/api/v1/datasets/a2213f69-bf56-4c51-8f53-1bcb2ac5a1b5/validation", "status": 200, "latency_ms": 2.18}
+[WebServer] {"event": "http.request", "trace_id": "1b4e386ed2ec402fbeb186211cd78bb6", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 0.82}
+[WebServer] {"event": "http.request", "trace_id": "252474ad8c4b44fbb325e1001610c59a", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 4.09}
+[WebServer] {"event": "http.request", "trace_id": "8437785a63604f0ca0795f5ab6a50a0e", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 3.2}
+[WebServer] {"event": "http.request", "trace_id": "8536cc4ef0a74b24a1fda8dc847ae775", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 2.2}
+[WebServer] {"event": "http.request", "trace_id": "f7e99a7575ef4139a51cb7330c5fcfa4", "method": "POST", "path": "/api/v1/commands/datasets/a2213f69-bf56-4c51-8f53-1bcb2ac5a1b5/scan", "status": 200, "latency_ms": 6.58}
+[WebServer] {"event": "http.request", "trace_id": "672d3a56a7e248b6bc45cf5a96f59ffd", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 1.63}
+[WebServer] {"event": "http.request", "trace_id": "57f3e260057647b5904bedd5dd637cc3", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 4.48}
+[WebServer] {"event": "http.request", "trace_id": "5d59c17953294b7cae8e332f041b21c4", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 4.3}
+[WebServer] {"event": "http.request", "trace_id": "e9ef88c4a6f94d19b2c3e22b95714688", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 1.51}
+  ✓  3 ../../tests/e2e/workflow.spec.ts:119:5 › import quarantines malformed rows, then scan produces real output (588ms)
+
+  3 passed (5.0s)

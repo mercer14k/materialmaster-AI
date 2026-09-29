@@ -1,0 +1,107 @@
+$ playwright test
+[WebServer] {"event": "http.request", "trace_id": "fd3d0c5b2a9142d7a56cb830ff385e9e", "method": "GET", "path": "/ready", "status": 200, "latency_ms": 1.94}
+[WebServer] (node:6110) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] $ vite --host 127.0.0.1 --port 5297
+[WebServer] (node:6144) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:6151) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] {"event": "http.request", "trace_id": "d4c385255718464d861973f2945c84d0", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 1.32}
+[WebServer] {"event": "http.request", "trace_id": "41350f89d43a4017bdebd7ce41db7bc3", "method": "GET", "path": "/api/v1/ai/models", "status": 200, "latency_ms": 4.42}
+[WebServer] {"event": "http.request", "trace_id": "484a3f5c4cdf4eb6b08b13ea3be64a04", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 5.02}
+[WebServer] {"event": "http.request", "trace_id": "177d660614eb41afa76575d28c81100f", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 0.98}
+[WebServer] {"event": "http.request", "trace_id": "de076b94272c4e6ea535c58d914fc351", "method": "GET", "path": "/api/v1/ai/models", "status": 200, "latency_ms": 1.36}
+[WebServer] {"event": "http.request", "trace_id": "d15bbd37c2ea4c52827ff696a55527d4", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 1.69}
+[WebServer] {"event": "http.request", "trace_id": "cf1c6514e29e492985e408e3029aca56", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 3.74}
+[WebServer] {"event": "http.request", "trace_id": "9e46e49579c045b0a016475ef4a2397a", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 3.77}
+[WebServer] {"event": "http.request", "trace_id": "16dfe39295dd46b6b4672eb31a625692", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 2.61}
+[WebServer] {"event": "http.request", "trace_id": "66a89831288349b7be8469fee033134a", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 2.24}
+[WebServer] {"event": "http.request", "trace_id": "cb37d2d1733a43a4993771c4363279d4", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 5.91}
+[WebServer] {"event": "http.request", "trace_id": "7d7f2d86b9754d218034626dcd6c9331", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 1.58}
+[WebServer] {"event": "http.request", "trace_id": "8e9dd000d69b48279a3e2ec942a6c6bb", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 3.21}
+[WebServer] {"event": "http.request", "trace_id": "de8d65a054ca4a67bc0acdf7fffff597", "method": "GET", "path": "/api/v1/findings/96fcd01b-9fb8-49f9-b09b-6a64cff77ba6:0df0ef3f8cf27be3527cc8c8", "status": 200, "latency_ms": 2.79}
+[WebServer] {"event": "http.request", "trace_id": "ef89e330637c4c5f81315e63e891be48", "method": "POST", "path": "/api/v1/commands/findings/96fcd01b-9fb8-49f9-b09b-6a64cff77ba6:0df0ef3f8cf27be3527cc8c8/review", "status": 200, "latency_ms": 5.73}
+[WebServer] {"event": "http.request", "trace_id": "2ba47a90665442c09054440ec04e560a", "method": "GET", "path": "/api/v1/findings/96fcd01b-9fb8-49f9-b09b-6a64cff77ba6:0df0ef3f8cf27be3527cc8c8", "status": 200, "latency_ms": 1.4}
+[WebServer] {"event": "http.request", "trace_id": "c1fc7b8073144aeea37adc98e35da5f9", "method": "GET", "path": "/api/v1/ai/models", "status": 200, "latency_ms": 1.94}
+[WebServer] {"event": "http.request", "trace_id": "75dac465728847c7b0f8fc7459f0ba93", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 2.02}
+[WebServer] {"event": "http.request", "trace_id": "197bc9bef2024708bbb421d5f0cd5e0c", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 5.21}
+[WebServer] {"event": "http.request", "trace_id": "76bd5e9256754c1d835fbafef6783d9f", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 6.1}
+[WebServer] {"event": "http.request", "trace_id": "fd5e9adc8f4e43b0ba84cb95a8f09c28", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 4.07}
+[WebServer] {"event": "http.request", "trace_id": "706057705d5646e79b1f755d470bf01b", "method": "GET", "path": "/api/v1/export/findings.csv", "status": 200, "latency_ms": 3.32}
+[WebServer] {"event": "http.request", "trace_id": "d63a147bed914328a234755fdee5140b", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 2.36}
+[WebServer] {"event": "http.request", "trace_id": "d1acec8e01fb4012a6c18fcbfc1e271f", "method": "GET", "path": "/api/v1/audit", "status": 200, "latency_ms": 1.92}
+  ✓  1 ../../tests/e2e/workflow.spec.ts:6:5 › computed dashboard, evidence review, no default model, export, and audit (1.9s)
+[WebServer] {"event": "http.request", "trace_id": "a81372400ad74b4b9f00406629c2941a", "method": "GET", "path": "/api/v1/ai/models", "status": 200, "latency_ms": 1.2}
+[WebServer] {"event": "http.request", "trace_id": "bd5cba5e926949e79959cf998acdaa35", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 1.23}
+[WebServer] {"event": "http.request", "trace_id": "11b121421d284ac591635f6d9c6d9c48", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 2.4}
+[WebServer] {"event": "http.request", "trace_id": "f514e8bfae9748e795c24922e6e443a1", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 0.51}
+[WebServer] {"event": "http.request", "trace_id": "9449960a255243af90bc53ac91323042", "method": "GET", "path": "/api/v1/ai/models", "status": 200, "latency_ms": 0.89}
+[WebServer] {"event": "http.request", "trace_id": "87aa5cffece14ba78885ba8aac6c5f5a", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 1.81}
+[WebServer] {"event": "http.request", "trace_id": "241440e3102a46739430570e7f751f7e", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 1.91}
+[WebServer] {"event": "http.request", "trace_id": "623cde4d38004b07b69c02815af23c15", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 2.68}
+[WebServer] {"event": "http.request", "trace_id": "a60a185a52cc4beca282d109a2cd9418", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 1.65}
+[WebServer] {"event": "http.request", "trace_id": "2471070b12df450a8accad3afabbe315", "method": "GET", "path": "/api/v1/materials", "status": 200, "latency_ms": 2.45}
+[WebServer] {"event": "http.request", "trace_id": "cfea4144d7214f848060b7d3d8c8f010", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 2.22}
+[WebServer] {"event": "http.request", "trace_id": "d2d77d43049846e0936c01056b0b52cb", "method": "GET", "path": "/api/v1/materials", "status": 200, "latency_ms": 3.46}
+[WebServer] {"event": "http.request", "trace_id": "c263ad3b85604a67a4831ada4a51d006", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 1.56}
+[WebServer] {"event": "http.request", "trace_id": "5bb1a828d1834a61a27940b98aab3c0e", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 2.36}
+[WebServer] {"event": "http.request", "trace_id": "af9aa29008384925ab0d7cdb0925d860", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 3.48}
+  ✓  2 ../../tests/e2e/workflow.spec.ts:100:5 › material search, responsive layout and architecture (883ms)
+[WebServer] {"event": "http.request", "trace_id": "1b70b94034ac44e58c0e2f58b433cc01", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 0.68}
+[WebServer] {"event": "http.request", "trace_id": "bef3914238f54a2e88ff9f1bed45456e", "method": "GET", "path": "/api/v1/ai/models", "status": 200, "latency_ms": 1.83}
+[WebServer] {"event": "http.request", "trace_id": "7cb89638f9d64806a0e7064f1c6907f5", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 3.06}
+[WebServer] {"event": "http.request", "trace_id": "667c7c5ad2b542cd92041ec49e76615b", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 0.9}
+[WebServer] {"event": "http.request", "trace_id": "4a4988e39dae42719442f58c721c2b40", "method": "GET", "path": "/api/v1/ai/models", "status": 200, "latency_ms": 1.31}
+[WebServer] {"event": "http.request", "trace_id": "575dceff74fc43d2a0dd53bf05c6914f", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 1.22}
+[WebServer] {"event": "http.request", "trace_id": "7ce349eae44b4c2b9d9c2a2734663859", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 2.72}
+[WebServer] {"event": "http.request", "trace_id": "276d7d7aecba499cb826cb78dd5ed35a", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 3.04}
+[WebServer] {"event": "http.request", "trace_id": "01cd52e100bc437499094c7c2095927f", "method": "POST", "path": "/api/v1/commands/import", "status": 200, "latency_ms": 5.76}
+[WebServer] {"event": "http.request", "trace_id": "abec46b1ad5741b58a40f824f72378a1", "method": "GET", "path": "/api/v1/datasets/7127bdba-acd6-412f-b7f7-9dfd78001c64/validation", "status": 200, "latency_ms": 2.57}
+[WebServer] {"event": "http.request", "trace_id": "f6867b7fbc1f4e60be050dcf6e2a5729", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 1.78}
+[WebServer] {"event": "http.request", "trace_id": "e20ed1d917a24f37bbc954ddcc0e5d34", "method": "GET", "path": "/api/v1/ai/models", "status": 200, "latency_ms": 3.44}
+[WebServer] {"event": "http.request", "trace_id": "a788d1c227774fcab80d9aa70b718f88", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 4.79}
+[WebServer] {"event": "http.request", "trace_id": "34ff711302094d3ebc99cf8ce2217c2b", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 4.58}
+[WebServer] {"event": "http.request", "trace_id": "8df688350c3f4a748f061bdf8e879e70", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 1.46}
+[WebServer] {"event": "http.request", "trace_id": "31141f700c184ec381d2d2eb94a933e0", "method": "POST", "path": "/api/v1/commands/datasets/7127bdba-acd6-412f-b7f7-9dfd78001c64/scan", "status": 200, "latency_ms": 6.56}
+[WebServer] {"event": "http.request", "trace_id": "faaab73347d24bd5898164d02b21f5d6", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 0.98}
+[WebServer] {"event": "http.request", "trace_id": "312b590e5acf484f9096f0890255b97c", "method": "GET", "path": "/api/v1/ai/models", "status": 200, "latency_ms": 2.64}
+[WebServer] {"event": "http.request", "trace_id": "5507aec2ae4441dd86c991a21c1f565f", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 4.44}
+[WebServer] {"event": "http.request", "trace_id": "35cd094466ca41f6b73416263273f5a1", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 4.51}
+[WebServer] {"event": "http.request", "trace_id": "98ea7f35313b46fcb8ee34465b04db68", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 2.62}
+  ✓  3 ../../tests/e2e/workflow.spec.ts:132:5 › import quarantines malformed rows, then scan produces real output (574ms)
+[WebServer] {"event": "http.request", "trace_id": "1760e97843c74899a82018bdec52ec76", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 1.29}
+[WebServer] {"event": "http.request", "trace_id": "35959bb472ff4c70b2bca0ee7f523327", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 1.56}
+[WebServer] {"event": "http.request", "trace_id": "183983340b9f4bcf8f64e11b2cc30663", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 3.75}
+[WebServer] {"event": "http.request", "trace_id": "0afc279aad354f41af5771c7236c3053", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 3.41}
+[WebServer] {"event": "http.request", "trace_id": "630a9337c76d44fa86b3d4be22693c33", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 1.83}
+[WebServer] {"event": "http.request", "trace_id": "c11f1dd991304eedb5730f88c9b28b64", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 2.12}
+[WebServer] {"event": "http.request", "trace_id": "07202ba877f6487a9ffeee3eda23799d", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 2.11}
+[WebServer] {"event": "http.request", "trace_id": "c9216700b8f943e4a2cc4d1b8efc3b3f", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 2.37}
+[WebServer] {"event": "http.request", "trace_id": "553b0067868a44f5bbe4a80bd48d4266", "method": "GET", "path": "/api/v1/findings/7127bdba-acd6-412f-b7f7-9dfd78001c64:0f6622e4ec6bb166961545f8", "status": 200, "latency_ms": 1.79}
+[WebServer] {"event": "http.request", "trace_id": "6db09669df9e4b5d801147df04ac811c", "method": "GET", "path": "/api/v1/findings/7127bdba-acd6-412f-b7f7-9dfd78001c64:0f6622e4ec6bb166961545f8", "status": 200, "latency_ms": 1.96}
+[WebServer] {"event": "http.request", "trace_id": "5a87085fb1c944c5b06e17756e486694", "method": "GET", "path": "/api/v1/findings/7127bdba-acd6-412f-b7f7-9dfd78001c64:0f6622e4ec6bb166961545f8", "status": 200, "latency_ms": 2.0}
+[WebServer] {"event": "http.request", "trace_id": "3ce9207df44643369f6b4e8ae50577ca", "method": "GET", "path": "/api/v1/findings/7127bdba-acd6-412f-b7f7-9dfd78001c64:0f6622e4ec6bb166961545f8", "status": 200, "latency_ms": 1.79}
+[WebServer] {"event": "http.request", "trace_id": "d1aee737e0f14fa6b233510ac74118dc", "method": "GET", "path": "/api/v1/findings/7127bdba-acd6-412f-b7f7-9dfd78001c64:6215881e1e12ce9676f611ea", "status": 200, "latency_ms": 2.05}
+[WebServer] {"event": "http.request", "trace_id": "d26be97a52af4b00bbf22ffeea492e03", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 3.33}
+[WebServer] {"event": "http.request", "trace_id": "1d1a4ca0ec554eb79ccf3729b65b7c76", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 2.99}
+[WebServer] {"event": "http.request", "trace_id": "377c1868faef455995f3fe974b51ba33", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 7.71}
+[WebServer] {"event": "http.request", "trace_id": "4c2ccefe93ac4873834eba014805601b", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 5.69}
+[WebServer] {"event": "http.request", "trace_id": "684460d1ce3d4f869ce1d1bbb69f82c1", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 2.08}
+[WebServer] {"event": "http.request", "trace_id": "ccc0c4a482214411963889d02c784886", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 1.68}
+  ✓  4 ../../tests/e2e/workflow.spec.ts:165:5 › local model selection is explicit, session-only, and sent with the explanation (1.6s)
+[WebServer] {"event": "http.request", "trace_id": "9fec810dbe304bb3991f5f90837d5a5f", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 0.77}
+[WebServer] {"event": "http.request", "trace_id": "0ae0d787b3df4ac88dd09a9a82a99fd6", "method": "GET", "path": "/api/v1/ai/models", "status": 200, "latency_ms": 1.73}
+[WebServer] {"event": "http.request", "trace_id": "2ac8ad51477848c68c3884e3a496ec7b", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 2.34}
+[WebServer] {"event": "http.request", "trace_id": "82fc43076aca49cb8bb53cc9c41924e6", "method": "GET", "path": "/api/v1/config", "status": 200, "latency_ms": 1.04}
+[WebServer] {"event": "http.request", "trace_id": "553037b14f5f485993ed84551706dcda", "method": "GET", "path": "/api/v1/ai/models", "status": 200, "latency_ms": 1.45}
+[WebServer] {"event": "http.request", "trace_id": "24804ab04b494ba9b1fa593d3f62086c", "method": "GET", "path": "/api/v1/datasets", "status": 200, "latency_ms": 1.84}
+[WebServer] {"event": "http.request", "trace_id": "2f52b310a9554eeaa686ea8ff14b44b4", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 3.48}
+[WebServer] {"event": "http.request", "trace_id": "8899cd02604b49b09ef17ae4a9f93407", "method": "GET", "path": "/api/v1/findings", "status": 200, "latency_ms": 2.17}
+[WebServer] {"event": "http.request", "trace_id": "7eb074ca9bda4f03b86426c4f83b05b5", "method": "GET", "path": "/api/v1/overview", "status": 200, "latency_ms": 2.3}
+  ✓  5 ../../tests/e2e/workflow.spec.ts:301:5 › workplace source guidance is accessible from import (399ms)
+
+  5 passed (7.2s)

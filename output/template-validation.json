@@ -1,0 +1,22 @@
+{
+  "total": 2,
+  "valid_count": 2,
+  "invalid_count": 0,
+  "rejected": [],
+  "findings": [],
+  "metadata": {
+    "algorithm_version": "rules-1.0",
+    "embedding_model": "sklearn-hashing-char-3-5/512-v1",
+    "records": 2,
+    "candidate_pairs": 0,
+    "truncated_blocks": 0,
+    "config": {
+      "similarity_threshold": 0.8,
+      "max_block_size": 80,
+      "min_price_peers": 8,
+      "price_ratio": 3.0,
+      "modified_z_threshold": 6.0
+    },
+    "warning": null
+  }
+}

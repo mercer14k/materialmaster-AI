@@ -1,0 +1,35 @@
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 1640 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                     0.66 kB │ gzip:  0.41 kB
+dist/assets/ibm-plex-mono-vietnamese-400-normal-DDuiU_S-.woff       5.62 kB
+dist/assets/ibm-plex-mono-cyrillic-ext-400-normal-DMdlQ8Kv.woff     5.82 kB
+dist/assets/ibm-plex-mono-vietnamese-400-normal-BulugwFq.woff2      5.87 kB
+dist/assets/ibm-plex-mono-cyrillic-ext-400-normal-xuaO2J-f.woff2    6.91 kB
+dist/assets/ibm-plex-mono-cyrillic-400-normal-CEL4l2ZJ.woff         7.20 kB
+dist/assets/dm-sans-latin-ext-400-normal-BtiwyxMk.woff2             7.36 kB
+dist/assets/dm-sans-latin-ext-600-normal-4vooXBpG.woff2             7.42 kB
+dist/assets/dm-sans-latin-ext-500-normal-BJfUCQsA.woff2             7.43 kB
+dist/assets/dm-sans-latin-ext-700-normal-CJIcxD6K.woff2             7.45 kB
+dist/assets/ibm-plex-mono-cyrillic-400-normal-BSMlKf0J.woff2        8.36 kB
+dist/assets/dm-sans-latin-ext-400-normal-BjWJ59Pq.woff              9.98 kB
+dist/assets/dm-sans-latin-ext-700-normal-BLI3TTWz.woff             10.01 kB
+dist/assets/dm-sans-latin-ext-600-normal-DRtaDpgU.woff             10.02 kB
+dist/assets/dm-sans-latin-ext-500-normal-DR84L5F-.woff             10.07 kB
+dist/assets/ibm-plex-mono-latin-ext-400-normal-D3D2R8hC.woff       11.77 kB
+dist/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff           13.14 kB
+dist/assets/ibm-plex-mono-latin-ext-400-normal-BmRBH3aV.woff2      13.35 kB
+dist/assets/dm-sans-latin-600-normal-Aqo67rzb.woff2                14.14 kB
+dist/assets/dm-sans-latin-400-normal-CW0RaeGs.woff2                14.20 kB
+dist/assets/dm-sans-latin-500-normal-B9HHJjqV.woff2                14.30 kB
+dist/assets/dm-sans-latin-700-normal-DvUfVpUG.woff2                14.35 kB
+dist/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2          14.71 kB
+dist/assets/dm-sans-latin-600-normal-BmdmIIQ2.woff                 18.32 kB
+dist/assets/dm-sans-latin-400-normal-BwCSEQnW.woff                 18.36 kB
+dist/assets/dm-sans-latin-700-normal-CUSSCpQX.woff                 18.50 kB
+dist/assets/dm-sans-latin-500-normal-Dr3UlScf.woff                 18.52 kB
+dist/assets/index-DSjIv19v.css                                     32.88 kB │ gzip:  7.87 kB
+dist/assets/index-BoP5EcMx.js                                     304.33 kB │ gzip: 95.34 kB
+✓ built in 842ms
