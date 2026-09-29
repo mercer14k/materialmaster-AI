@@ -1,0 +1,12 @@
+#!/bin/sh
+set -eu
+psql --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" \
+  --set=app_password="$APP_DB_PASSWORD" --set=reader_password="$READ_DB_PASSWORD" \
+  --set=ON_ERROR_STOP=1 <<'SQL'
+CREATE ROLE mm_app LOGIN PASSWORD :'app_password' NOSUPERUSER NOCREATEDB NOCREATEROLE;
+CREATE ROLE mm_reader LOGIN PASSWORD :'reader_password' NOSUPERUSER NOCREATEDB NOCREATEROLE;
+REVOKE CREATE ON SCHEMA public FROM PUBLIC;
+GRANT USAGE, CREATE ON SCHEMA public TO mm_app;
+GRANT USAGE ON SCHEMA public TO mm_reader;
+ALTER DEFAULT PRIVILEGES FOR ROLE mm_app IN SCHEMA public GRANT SELECT ON TABLES TO mm_reader;
+SQL
