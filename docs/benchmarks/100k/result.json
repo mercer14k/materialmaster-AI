@@ -1,0 +1,129 @@
+{
+  "benchmark": "synthetic-injected-v1",
+  "timestamp": "2026-09-28T01:35:30.871181+00:00",
+  "count": 100000,
+  "seed": 42,
+  "findings": 18332,
+  "invalid_rows": 0,
+  "hardware": {
+    "os": "macOS-26.6.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "logical_cpus": 10,
+    "python": "3.12.14"
+  },
+  "dependencies": {
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1",
+    "pydantic": "2.13.5"
+  },
+  "model": {
+    "llm": "disabled",
+    "embedding": "sklearn-hashing-char-3-5/512-v1"
+  },
+  "timing_seconds": {
+    "generation": 0.164,
+    "validation": 0.4661,
+    "model_loading": 0.0,
+    "analysis": 1.2403,
+    "total": 1.8705
+  },
+  "peak_process_rss_mib": 768.31,
+  "metrics": {
+    "duplicate": {
+      "tp": 5832,
+      "fp": 0,
+      "fn": 1668,
+      "tn": 4999942500,
+      "precision": 1.0,
+      "recall": 0.7776,
+      "accuracy": 0.9999996663966639,
+      "false_positive_rate": 0.0
+    },
+    "uom": {
+      "tp": 2500,
+      "fp": 0,
+      "fn": 0,
+      "tn": 97500,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "price": {
+      "tp": 2500,
+      "fp": 0,
+      "fn": 0,
+      "tn": 97500,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "purchasing": {
+      "tp": 2500,
+      "fp": 0,
+      "fn": 0,
+      "tn": 97500,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "lifecycle": {
+      "tp": 2500,
+      "fp": 0,
+      "fn": 0,
+      "tn": 97500,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "lead_time": {
+      "tp": 2500,
+      "fp": 0,
+      "fn": 0,
+      "tn": 97500,
+      "precision": 1.0,
+      "recall": 1.0,
+      "accuracy": 1.0,
+      "false_positive_rate": 0.0
+    },
+    "any_finding": {
+      "tp": 19166,
+      "fp": 0,
+      "fn": 834,
+      "tn": 80000,
+      "precision": 1.0,
+      "recall": 0.9583,
+      "accuracy": 0.99166,
+      "false_positive_rate": 0.0
+    }
+  },
+  "engine": {
+    "algorithm_version": "rules-1.0",
+    "embedding_model": "sklearn-hashing-char-3-5/512-v1",
+    "records": 100000,
+    "candidate_pairs": 7500,
+    "truncated_blocks": 0,
+    "config": {
+      "similarity_threshold": 0.8,
+      "max_block_size": 80,
+      "min_price_peers": 8,
+      "price_ratio": 3.0,
+      "modified_z_threshold": 6.0
+    },
+    "warning": null
+  },
+  "review_throughput": {
+    "human_reviews_per_hour": null,
+    "note": "Not measured: requires timed human user study. Run scripts/review_throughput.py for database decision-write throughput, not human productivity."
+  },
+  "limitations": [
+    "Synthetic data uses known injection patterns; these scores are not estimates of real ERP performance.",
+    "Duplicate FPR uses all possible record pairs, most blocked out before scoring; report precision/recall alongside it.",
+    "Default generator identity anchors make duplicates easy; adversarial holdout cases are in unit tests.",
+    "Peak RSS covers the whole benchmark process, including generation and libraries; database/UI are excluded."
+  ]
+}

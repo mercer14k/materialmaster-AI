@@ -1,0 +1,72 @@
+name: materialmaster-ai
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: materialmaster
+      POSTGRES_USER: mm_bootstrap
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-local-bootstrap-only}
+      APP_DB_PASSWORD: ${APP_DB_PASSWORD:-local-app-only}
+      READ_DB_PASSWORD: ${READ_DB_PASSWORD:-local-read-only}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./scripts/init-db.sh:/docker-entrypoint-initdb.d/10-roles.sh:ro
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U mm_bootstrap -d materialmaster']
+      interval: 3s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+      args:
+        INSTALL_SEMANTIC: ${INSTALL_SEMANTIC:-false}
+    environment:
+      DATABASE_URL: postgresql+psycopg://mm_app:${APP_DB_PASSWORD:-local-app-only}@db:5432/materialmaster
+      READ_DATABASE_URL: postgresql+psycopg://mm_reader:${READ_DB_PASSWORD:-local-read-only}@db:5432/materialmaster
+      AUTH_MODE: ${AUTH_MODE:-demo}
+      WRITE_TOKEN: ${WRITE_TOKEN:-}
+      READ_TOKEN: ${READ_TOKEN:-}
+      SEED_DEMO: ${SEED_DEMO:-true}
+      LLM_RUNTIME: ${LLM_RUNTIME:-disabled}
+      LLM_URL: ${LLM_URL:-http://ollama:11434}
+      EMBEDDING_MODEL_PATH: ${EMBEDDING_MODEL_PATH:-}
+    volumes:
+      - ./models:/models:ro
+    ports: ['127.0.0.1:8120:8000']
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://localhost:8000/ready')"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+    restart: unless-stopped
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    ports: ['127.0.0.1:3000:8080']
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD, wget, --spider, -q, http://localhost:8080/]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+  ollama:
+    image: ollama/ollama:0.13.5
+    profiles: [ai]
+    environment:
+      OLLAMA_NO_CLOUD: '1'
+    volumes: [ollama_models:/root/.ollama]
+    restart: unless-stopped
+volumes:
+  postgres_data:
+  ollama_models:

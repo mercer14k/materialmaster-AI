@@ -1,0 +1,30 @@
+{
+  "recorded_at": "2026-09-28T02:22:30.847533+00:00",
+  "backend_tests": 89,
+  "frontend_unit_tests": 3,
+  "browser_workflow_tests": 5,
+  "accessibility": "Dashboard and local-model selection dialog: axe WCAG2 A/AA + WCAG2.1 AA, no violations",
+  "backend_coverage_report": "output/coverage.json (local generated)",
+  "native_database": "SQLite",
+  "docker_compose": "Not executed; Docker unavailable on authoring host",
+  "postgresql_integration": "CI job supplied; not locally executed",
+  "github_actions": "Not run remotely; repository created locally only",
+  "live_optional_models": "Existing local Ollama inventory verified; no model selected automatically and no live inference run. API inference and UI selection tested with explicit fixtures; llama.cpp live runtime remains unverified.",
+  "security_audit": "pip-audit and pnpm production audit: no known vulnerabilities after environment installer update",
+  "backend_coverage_percent": 89.47,
+  "repository_checks": {
+    "source_files": 101,
+    "broken_local_markdown_links": 0,
+    "credential_pattern_matches": 0,
+    "compose_yaml": "Parsed with local js-yaml; engine execution not available"
+  },
+  "model_selection_checks": [
+    "No default even with a singleton inventory",
+    "Explicit runtime/model sent with generation; no LLM_MODEL fallback",
+    "Unknown, remote-backed and non-completion models rejected before source evidence",
+    "Model-specific idempotency and audit metadata",
+    "Selection clears after reload or removed model",
+    "Late narrative cannot appear under another finding"
+  ],
+  "workplace_import_template": "2 CSV records valid; 0 quarantined; CLI analysis executed"
+}

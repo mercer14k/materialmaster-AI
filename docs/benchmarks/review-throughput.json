@@ -1,0 +1,9 @@
+{
+  "measurement": "single-client SQLAlchemy + SQLite WAL, one transaction per decision, no HTTP",
+  "decisions": 500,
+  "seconds": 0.17191237502265722,
+  "committed_decisions_per_second": 2908.4584511970265,
+  "human_reviews_per_hour": null,
+  "hardware": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.12.14"
+}

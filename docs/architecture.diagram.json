@@ -1,0 +1,16 @@
+{
+  "description": null,
+  "diagrams": [
+    {
+      "accessibility": null,
+      "description": null,
+      "id": "diagram_1",
+      "kind": "raw",
+      "source": "flowchart LR\n    Source[\"ERP-neutral snapshots\"] --> Validate[\"Pydantic validation\"]\n    Validate --> Store[\"PostgreSQL / SQLite\"]\n    Validate --> Quarantine[\"Visible rejected rows\"]\n    Store --> Core[\"Rules + robust statistics\"]\n    Store --> Embed[\"Local embedding candidates\"]\n    Core --> Queue[\"Evidence-backed review queue\"]\n    Embed --> Queue\n    Queue --> Human[\"Human decision + reason\"]\n    Human --> Audit[\"Audit + quality snapshots\"]\n    Human --> Feedback[\"Feedback-informed priority\"]\n    Feedback --> Queue\n    Queue --> LocalAI[\"Optional local explanation\"]\n    LocalAI --> Schema[\"Schema + citation checks\"]\n    Schema --> UI[\"React analytical workspace\"]\n    Queue --> UI\n",
+      "styles": [],
+      "title": "Diagram 1"
+    }
+  ],
+  "title": "README",
+  "version": 2
+}
